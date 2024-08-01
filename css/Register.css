@@ -1,0 +1,65 @@
+body{
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-pantalla-capas-papel-oscuro-detalles-dorados_23-2148390681.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#img1{
+    margin-left: 540px;
+    
+}
+
+#logo1{
+    border-bottom: 2px solid white;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    margin-left: 320px;
+}
+
+.login{
+    color: aliceblue;
+    margin-left: 550px;
+    font-size: 1.5em;
+}
+
+.input1{
+    margin-left: 538px;
+}
+
+#parraf{
+    color: aliceblue;
+    font-size: 1.5em;
+}
+
+#inputP{
+
+}
+
+.input2{
+    margin-left: 538px;
+}
+
+#parraf2{
+    color: aliceblue;
+    font-size: 1.5em; 
+}
+
+#inputS{
+
+}
+
+
+#boton{
+    margin-left: 570px;
+}
+
+#regis{
+    color: aliceblue;
+    margin-left: 510px;
+}
+
+#link1{
+    color: rgb(34, 0, 253);
+}

@@ -1,0 +1,187 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/vector-gratis/diseno-realista-papel-tapiz-formas-geometricas-elegantes_23-2148438261.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+
+
+.tareas1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 40px;
+  justify-content: center;
+}
+
+/* Estilos para tareas */
+.tareas {
+  width: 500px;
+  height: 240%;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.813);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.agregarTareas {
+  display: flex;
+  justify-content: center;
+}
+
+#tareasT,
+#parrafo1,
+#parrafo,
+#eventosE,
+#parrafo2,
+#fechas1,
+#eventoP {
+  color: aliceblue;
+}
+
+#fechas1 {
+  margin-right: 300px;
+  font-size: 1.2em;
+}
+
+#eventoP {
+  margin-right: 300px;
+  font-size: 1.2em;
+}
+
+#parrafo1,
+#parrafo2 {
+  font-size: 1.6em;
+}
+
+#parrafo {
+  font-size: 1.5em;
+  padding-right: 300px;
+}
+
+#tareas,
+#fechas,
+#eventos,
+#fechasEventos {
+  height: 30px;
+  border-radius: 7px;
+  background-color: rgba(232, 230, 229, 0.71);
+}
+
+#agregar1,
+#agregarF {
+  height: 30px;
+  border-radius: 7px;
+  background-color: aliceblue;
+}
+
+#agregarF {
+  width: 114px;
+}
+
+#eliminar {
+  background-color: rgb(215, 44, 44);
+  color: aliceblue;
+  margin-right: 240px;
+}
+
+#editar {
+  background-color: rgb(37, 37, 67);
+  color: aliceblue;
+  display: flex;
+  margin-top: -20px;
+  margin-left: 36px;
+  height: 22px;
+  margin-right: 375px;
+}
+
+/* Media Queries para Responsividad */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  .tareas {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .tareas1 {
+    grid-template-columns: 1fr;
+    /* esto nos hace los divs donde se agregan tareas y eventos en columnas*/
+    row-gap: 20px;
+  }
+
+  #parrafo {
+    padding-right: 0;
+  }
+
+  #eventos,
+  #fechas,
+  #tareas {
+    width: 100%;
+  }
+
+  #fechas1 {
+    width: 100%;
+  }
+
+  #eventoP {
+    width: 100%;
+  }
+
+
+  #editar,
+  #eliminar {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #editar {
+    width: 10%;
+  }
+
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .tareas {
+    width: 90%;
+    height: auto;
+  }
+
+  .tareas1 {
+    grid-template-columns: 1fr 1fr;
+    /*para que todo calse en el div*/
+  }
+
+  #parrafo {
+    padding-right: 20px;
+  }
+
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 901px) {
+  .tareas {
+    width: 500px;
+    height: 240%;
+  }
+
+  .tareas1 {
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+  }
+
+  #parrafo {
+    padding-right: 300px;
+  }
+}
